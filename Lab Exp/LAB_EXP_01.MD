@@ -80,7 +80,7 @@ Create two tables (`DEPARTMENT` and `EMPLOYEE`) and perform the following operat
 
 ```sql
 -- Connect to MySQL/MariaDB
-C:\xampp\mysql\bin> mysql -u root
+$ /usr/local/mysql/bin/mysql -u root
 
 -- Show available databases
 SHOW DATABASES;
