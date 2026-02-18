@@ -110,34 +110,4 @@ All required SQL queries were written and organized using appropriate clauses: `
 
 ---
 
-## 📝 Observations
 
-- `DISTINCT` removes duplicate values from the selected column(s).
-- `WHERE` clause filters rows based on given conditions.
-- `IN` simplifies checking multiple possible values in a single condition.
-- `NOT IN` excludes rows matching listed values.
-- `BETWEEN` is useful for inclusive range-based filtering.
-- `LIKE 'M%'` performs prefix-based pattern matching.
-- Combining conditions with `AND` provides precise filtering of records.
-
----
-
-## 🎓 Viva Questions
-
-### ❓ 1) What is the difference between `DISTINCT` and `GROUP BY`?
-**Answer:** `DISTINCT` removes duplicate rows in the selected output, while `GROUP BY` groups rows for aggregation (like `COUNT`, `SUM`, etc.).
-
-### ❓ 2) Is `BETWEEN` inclusive in SQL?
-**Answer:** Yes. `BETWEEN a AND b` includes both boundary values `a` and `b`.
-
-### ❓ 3) Why is `IN` preferred over multiple `OR` conditions?
-**Answer:** `IN` is shorter, cleaner, and easier to read/maintain when checking one column against multiple values.
-
-### ❓ 4) What does `LIKE 'M%'` mean?
-**Answer:** It selects rows where the value starts with the letter `M`.
-
-### ❓ 5) What is the role of `WHERE` clause in SQL?
-**Answer:** It filters rows returned by a query based on specified conditions.
-
-### ❓ 6) Can we combine `IN` with `AND` in one query?
-**Answer:** Yes. `IN` can be combined with `AND`/`OR` to build complex filtering conditions.
