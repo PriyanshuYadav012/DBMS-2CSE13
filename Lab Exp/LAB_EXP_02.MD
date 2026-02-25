@@ -1,4 +1,4 @@
-# 📘 DBMS LAB ASSIGNMENT 02
+# DBMS LAB ASSIGNMENT 02
 
 > **Experiment:** SQL Query Practice on `EMPLOYEE` Table  
 > **Database:** `PriyanshuYadavDB`  
@@ -6,14 +6,14 @@
 
 ---
 
-## 🎯 Objective
+## Objective
 Perform queries using the `EMPLOYEE` table to retrieve data using various SQL clauses.
 
 ---
 
-## 🧩 SQL Queries & Solutions
+## SQL Queries & Solutions
 
-### 🔹 1) List all distinct jobs in `EMPLOYEE`
+### 1) List all distinct jobs in `EMPLOYEE`
 ```sql
 SELECT DISTINCT JOB
 FROM EMPLOYEE;
@@ -34,7 +34,7 @@ FROM EMPLOYEE;
 
 ---
 
-### 🔹 2) List all information about employees in Department Number 30
+### 2) List all information about employees in Department Number 30
 ```sql
 SELECT *
 FROM EMPLOYEE
@@ -57,7 +57,7 @@ WHERE DEPTNO = 30;
 
 ---
 
-### 🔹 3) Find all department numbers with department names where department number is greater than 20
+### 3) Find all department numbers with department names where department number is greater than 20
 ```sql
 SELECT DEPTNO, DNAME
 FROM DEPARTMENT
@@ -76,7 +76,7 @@ WHERE DEPTNO > 20;
 
 ---
 
-### 🔹 4) Find all information about managers and clerks in Department 30
+### 4) Find all information about managers and clerks in Department 30
 ```sql
 SELECT *
 FROM EMPLOYEE
@@ -96,7 +96,7 @@ WHERE DEPTNO = 30
 
 ---
 
-### 🔹 5) List Employee name, Employee number, and department of all clerks
+### 5) List Employee name, Employee number, and department of all clerks
 ```sql
 SELECT ENAME, EMPNO, DEPTNO
 FROM EMPLOYEE
@@ -117,7 +117,7 @@ WHERE JOB = 'CLERK';
 
 ---
 
-### 🔹 6) Find all managers not in Department 30
+### 6) Find all managers not in Department 30
 ```sql
 SELECT *
 FROM EMPLOYEE
@@ -137,7 +137,7 @@ WHERE JOB = 'MANAGER'
 
 ---
 
-### 🔹 7) List information about employees in Department 10 who are not managers or clerks
+### 7) List information about employees in Department 10 who are not managers or clerks
 ```sql
 SELECT *
 FROM EMPLOYEE
@@ -151,7 +151,7 @@ Empty set
 
 ---
 
-### 🔹 8) Find employees and jobs earning between 1200 and 1400
+### 8) Find employees and jobs earning between 1200 and 1400
 ```sql
 SELECT ENAME, JOB
 FROM EMPLOYEE
@@ -171,7 +171,7 @@ WHERE SAL BETWEEN 1200 AND 1400;
 
 ---
 
-### 🔹 9) List Name and Department Number of employees who are clerks, analysts, or salesmen
+### 9) List Name and Department Number of employees who are clerks, analysts, or salesmen
 ```sql
 SELECT ENAME, DEPTNO
 FROM EMPLOYEE
@@ -198,7 +198,7 @@ WHERE JOB IN ('CLERK', 'ANALYST', 'SALESMAN');
 
 ---
 
-### 🔹 10) List Name and Department Number of employees whose names begin with M
+### 10) List Name and Department Number of employees whose names begin with M
 ```sql
 SELECT ENAME, DEPTNO
 FROM EMPLOYEE
@@ -217,7 +217,7 @@ WHERE ENAME LIKE 'M%';
 
 ---
 
-## ✅ Conclusion
+## Conclusion
 All required SQL queries were written and organized using appropriate clauses: `DISTINCT`, `WHERE`, `IN`, `NOT IN`, `BETWEEN`, and `LIKE`.
 
 ---

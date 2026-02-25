@@ -1,4 +1,4 @@
-# 📗 DBMS LAB ASSIGNMENT 03
+# DBMS LAB ASSIGNMENT 03
 
 > **Experiment:** Advanced Data Retrieval on `EMPLOYEE` Table  
 > **Database:** `PriyanshuYadavDB`  
@@ -6,14 +6,14 @@
 
 ---
 
-## 🎯 Objective
+## Objective
 Perform advanced SQL queries using sorting, pattern matching, set filtering, null checks, and computed values.
 
 ---
 
-## 🧩 SQL Queries & Solutions
+## SQL Queries & Solutions
 
-### 🔹 1) List all employees and jobs in Department 30 in descending order of salary
+### 1) List all employees and jobs in Department 30 in descending order of salary
 ```sql
 SELECT ENAME, JOB
 FROM EMPLOYEE
@@ -38,7 +38,7 @@ ORDER BY SAL DESC;
 
 ---
 
-### 🔹 2) List job and department number of employees whose name is five letters long, starts with 'A' and ends with 'N'
+### 2) List job and department number of employees whose name is five letters long, starts with 'A' and ends with 'N'
 ```sql
 SELECT JOB, DEPTNO
 FROM EMPLOYEE
@@ -57,7 +57,7 @@ WHERE ENAME LIKE 'A___N';
 
 ---
 
-### 🔹 3) Display the names of employees whose name starts with 'S'
+### 3) Display the names of employees whose name starts with 'S'
 ```sql
 SELECT ENAME
 FROM EMPLOYEE
@@ -77,7 +77,7 @@ WHERE ENAME LIKE 'S%';
 
 ---
 
-### 🔹 4) Display the names of employees whose name ends with 'S'
+### 4) Display the names of employees whose name ends with 'S'
 ```sql
 SELECT ENAME
 FROM EMPLOYEE
@@ -98,7 +98,7 @@ WHERE ENAME LIKE '%S';
 
 ---
 
-### 🔹 5) Display names of employees working in department 10, 20, or 40 OR working as clerk, salesman, or analyst
+### 5) Display names of employees working in department 10, 20, or 40 OR working as clerk, salesman, or analyst
 ```sql
 SELECT ENAME
 FROM EMPLOYEE
@@ -130,7 +130,7 @@ WHERE DEPTNO IN (10, 20, 40)
 
 ---
 
-### 🔹 6) Display employee number and names for employees who earn commission
+### 6) Display employee number and names for employees who earn commission
 ```sql
 SELECT EMPNO, ENAME
 FROM EMPLOYEE
@@ -152,7 +152,7 @@ WHERE COMM IS NOT NULL
 
 ---
 
-### 🔹 7) Display employee number and total salary for each employee
+### 7) Display employee number and total salary for each employee
 ```sql
 SELECT EMPNO, (SAL + IFNULL(COMM, 0)) AS TOTAL_SALARY
 FROM EMPLOYEE;
@@ -183,7 +183,7 @@ FROM EMPLOYEE;
 
 ---
 
-### 🔹 8) Display employee number and annual salary for each employee
+### 8) Display employee number and annual salary for each employee
 ```sql
 SELECT EMPNO, (SAL * 12) AS ANNUAL_SALARY
 FROM EMPLOYEE;
@@ -214,7 +214,7 @@ FROM EMPLOYEE;
 
 ---
 
-### 🔹 9) Display names of all employees working as clerks and earning more than 3000
+### 9) Display names of all employees working as clerks and earning more than 3000
 ```sql
 SELECT ENAME
 FROM EMPLOYEE
@@ -229,7 +229,7 @@ Empty set
 
 ---
 
-### 🔹 10) Display names of employees working as clerk, salesman, or analyst and earning more than 3000
+### 10) Display names of employees working as clerk, salesman, or analyst and earning more than 3000
 ```sql
 SELECT ENAME
 FROM EMPLOYEE
@@ -244,5 +244,5 @@ Empty set
 
 ---
 
-## ✅ Conclusion
+## Conclusion
 All requested advanced retrieval queries were completed using sorting (`ORDER BY`), pattern matching (`LIKE`), list filters (`IN`), null handling (`IS NOT NULL`, `IFNULL`), and calculated columns.

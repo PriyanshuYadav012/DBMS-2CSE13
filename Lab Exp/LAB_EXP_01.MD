@@ -1,4 +1,4 @@
-# 📚 DBMS LAB ASSIGNMENT 01
+# DBMS LAB ASSIGNMENT 01
 
 > **Date:** 28/January/2026  
 > **Database:** PriyanshuYadavDB
@@ -6,7 +6,7 @@
 
 ---
 
-## 📋 Objective
+## Objective
 
 Create two tables (`DEPARTMENT` and `EMPLOYEE`) and perform the following operations:
 
@@ -18,7 +18,7 @@ Create two tables (`DEPARTMENT` and `EMPLOYEE`) and perform the following operat
 
 ---
 
-## 📊 Table Structures
+## Table Structures
 
 ### Table 1: DEPARTMENT
 
@@ -42,7 +42,7 @@ Create two tables (`DEPARTMENT` and `EMPLOYEE`) and perform the following operat
 
 ---
 
-## 📁 Sample Data
+## Sample Data
 
 ### DEPARTMENT Table
 
@@ -74,7 +74,7 @@ Create two tables (`DEPARTMENT` and `EMPLOYEE`) and perform the following operat
 
 ---
 
-## 🔧 SQL Queries & Solutions
+## SQL Queries & Solutions
 
 ### Step 0: Database Connection & Setup
 
@@ -194,7 +194,7 @@ Records: 14  Duplicates: 0  Warnings: 0
 
 ---
 
-## ✅ Problem Solutions
+## Problem Solutions
 
 ### Problem 1: Create EMPLOYEE_MASTER Table
 
@@ -267,7 +267,7 @@ SELECT * FROM EMPLOYEE_MASTER WHERE DEPTNO = 10;
 Empty set (0.001 sec)
 ```
 
-> ✅ **Result:** 1 record (MILLER) was deleted successfully.
+> **Result:** 1 record (MILLER) was deleted successfully.
 
 ---
 
@@ -308,7 +308,7 @@ SELECT EMPNO, ENAME, SAL FROM EMPLOYEE_MASTER WHERE DEPTNO = 20;
 6 rows in set (0.001 sec)
 ```
 
-> ✅ **Result:** Salary increased by 10% for 6 employees in DEPTNO 20.
+> **Result:** Salary increased by 10% for 6 employees in DEPTNO 20.
 
 ---
 
@@ -350,7 +350,7 @@ DESCRIBE EMPLOYEE_MASTER;
 8 rows in set (0.043 sec)
 ```
 
-> ✅ **Result:** SAL column type changed from `INT(10)` to `DECIMAL(10,2)`.
+> **Result:** SAL column type changed from `INT(10)` to `DECIMAL(10,2)`.
 
 ---
 
@@ -367,23 +367,23 @@ DROP TABLE EMPLOYEE_MASTER;
 Query OK, 0 rows affected (0.013 sec)
 ```
 
-> ✅ **Result:** `EMPLOYEE_MASTER` table dropped successfully.
+> **Result:** `EMPLOYEE_MASTER` table dropped successfully.
 
 ---
 
-## 📝 Summary
+## Summary
 
 | # | Task | Query Type | Status |
 |---|------|------------|--------|
-| 1 | Create EMPLOYEE_MASTER from EMPLOYEE | CREATE TABLE AS SELECT | ✅ Done |
-| 2 | Delete records where DEPTNO = 10 | DELETE | ✅ Done |
-| 3 | Update salary (+10%) for DEPTNO = 20 | UPDATE | ✅ Done |
-| 4 | Alter SAL to DECIMAL(10,2) | ALTER TABLE | ✅ Done |
-| 5 | Drop EMPLOYEE_MASTER table | DROP TABLE | ✅ Done |
+| 1 | Create EMPLOYEE_MASTER from EMPLOYEE | CREATE TABLE AS SELECT | Done |
+| 2 | Delete records where DEPTNO = 10 | DELETE | Done |
+| 3 | Update salary (+10%) for DEPTNO = 20 | UPDATE | Done |
+| 4 | Alter SAL to DECIMAL(10,2) | ALTER TABLE | Done |
+| 5 | Drop EMPLOYEE_MASTER table | DROP TABLE | Done |
 
 ---
 
-## 🔑 Key SQL Concepts Used
+## Key SQL Concepts Used
 
 | Concept | Command | Description |
 |---------|---------|-------------|
