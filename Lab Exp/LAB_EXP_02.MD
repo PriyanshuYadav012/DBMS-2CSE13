@@ -222,14 +222,4 @@ All required SQL queries were written and organized using appropriate clauses: `
 
 ---
 
-## 📝 Observations
 
-- `DISTINCT` removes duplicate values from the selected column(s).
-- `WHERE` clause filters rows based on given conditions.
-- `IN` simplifies checking multiple possible values in a single condition.
-- `NOT IN` excludes rows matching listed values.
-- `BETWEEN` is useful for inclusive range-based filtering.
-- `LIKE 'M%'` performs prefix-based pattern matching.
-- Combining conditions with `AND` provides precise filtering of records.
-
----
