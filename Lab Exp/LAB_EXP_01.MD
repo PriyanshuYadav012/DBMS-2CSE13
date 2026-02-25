@@ -1,11 +1,5 @@
 # DBMS LAB ASSIGNMENT 01
 
-> **Date:** 28/January/2026  
-> **Database:** PriyanshuYadavDB
-> **Server:** MariaDB 10.4.32
-
----
-
 ## Objective
 
 Create two tables (`DEPARTMENT` and `EMPLOYEE`) and perform the following operations:
