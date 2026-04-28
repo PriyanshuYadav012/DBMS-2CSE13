@@ -1,6 +1,6 @@
 # DBMS LAB EXPERIMENT 08
 
-> **Experiment:** Joins, Self Joins, and Grouping Queries on `EMPLOYEE`, `DEPT`, `SALGRADE`
+> **Experiment:** Joins, Self Joins, and Grouping Queries on `EMPLOYEE`, `DEPARTMENT`, `SALGRADE`
 
 ---
 
@@ -13,7 +13,7 @@ SELECT e.empno,
        e.deptno,
        d.dname AS dept_name
 FROM employee e
-JOIN dept d ON d.deptno = e.deptno;
+JOIN department d ON d.deptno = e.deptno;
 ```
 
 ### 2) Display employees whose manager name is JONES, and display their manager name too
@@ -34,7 +34,7 @@ SELECT d.dname AS dept_name,
        IFNULL(m.ename, 'NO MANAGER') AS manager_name,
        s.grade
 FROM employee e
-JOIN dept d ON d.deptno = e.deptno
+JOIN department d ON d.deptno = e.deptno
 LEFT JOIN employee m ON e.mgr = m.empno
 JOIN salgrade s ON e.sal BETWEEN s.losal AND s.hisal
 ORDER BY d.dname, e.ename;
@@ -48,7 +48,7 @@ SELECT e.ename,
        d.dname AS dept_name,
        e.sal
 FROM employee e
-JOIN dept d ON d.deptno = e.deptno
+JOIN department d ON d.deptno = e.deptno
 JOIN salgrade s ON e.sal BETWEEN s.losal AND s.hisal
 WHERE UPPER(e.job) <> 'CLERK'
 ORDER BY e.sal DESC;
@@ -72,7 +72,7 @@ SELECT e.ename,
        d.dname,
        s.grade
 FROM employee e
-JOIN dept d ON d.deptno = e.deptno
+JOIN department d ON d.deptno = e.deptno
 JOIN salgrade s ON e.sal BETWEEN s.losal AND s.hisal
 WHERE (e.sal * 12) = 36000
    OR UPPER(e.job) <> 'CLERK';
@@ -87,7 +87,7 @@ SELECT e.ename,
        d.dname,
        s.grade
 FROM employee e
-JOIN dept d ON d.deptno = e.deptno
+JOIN department d ON d.deptno = e.deptno
 JOIN salgrade s ON e.sal BETWEEN s.losal AND s.hisal
 WHERE (e.sal * 12) = 30000
   AND UPPER(e.job) <> 'CLERK';
@@ -108,7 +108,7 @@ LEFT JOIN employee m ON e.mgr = m.empno;
 SELECT d.dname,
        d.deptno,
        SUM(e.sal) AS total_salary
-FROM dept d
+FROM department d
 LEFT JOIN employee e ON e.deptno = d.deptno
 GROUP BY d.dname, d.deptno;
 ```
@@ -119,7 +119,7 @@ SELECT e.empno,
        e.ename,
        d.loc
 FROM employee e
-JOIN dept d ON d.deptno = e.deptno;
+JOIN department d ON d.deptno = e.deptno;
 ```
 
 ### 11) Display employee name and department name for each employee
@@ -127,5 +127,5 @@ JOIN dept d ON d.deptno = e.deptno;
 SELECT e.ename,
        d.dname AS department_name
 FROM employee e
-JOIN dept d ON d.deptno = e.deptno;
+JOIN department d ON d.deptno = e.deptno;
 ```
